@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aditya
-  namespace: default
+  name: ajit
+  namespace: aditya
   labels:
-    app: aditya
+    app: ajit
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: aditya
+      app: ajit
   template:
     metadata:
       labels:
-        app: aditya
+        app: ajit
     spec:
       containers:
-      - name: aditya
-        image: adityaji.azurecr.io/aditya:latest
+      - name: ajit
+        image: adityaji.azurecr.io/ajit:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
