@@ -1,4 +1,4 @@
-name: ajit-yt Deployment
+name: Portfolio Deployment
 
 on:
   push:
